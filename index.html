@@ -1,55 +1,271 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A personal collection of photos, videos, and moments.">
   <title>My Personal Archive</title>
-  <link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#home" aria-label="Home"><span class="camera">◉</span><span><b>My Personal Archive</b><small>Photos · Videos · Moments</small></span></a>
+  <a class="brand" href="#home" aria-label="Home">
+    <span class="camera">◉</span>
+    <span><b>My Personal Archive</b><small>Photos · Videos · Moments</small></span>
+  </a>
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-  <nav id="nav"><a class="active" href="#home">Home</a><a href="#gallery">Gallery</a><a href="#videos">Videos</a><a href="#moments">Moments</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-  <div class="social-top"><a href="#contact" aria-label="Instagram">◎</a><a href="#videos" aria-label="YouTube">▶</a><a href="#contact" aria-label="Telegram">➤</a></div>
-</header>
-<main>
-<section class="hero" id="home">
-  <div class="hero-copy"><p class="eyebrow">A PERSONAL COLLECTION</p><h1>Welcome to <span>my world.</span></h1><p class="hero-sub">A collection of photos, videos and special moments.</p><a class="gold-button" href="#gallery">Explore Gallery <span>→</span></a></div>
-  <div class="hero-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-</section>
-<section class="section" id="gallery">
-  <div class="section-heading"><h2>Photo Gallery</h2><a href="#gallery" class="text-link">View all photos ↗</a></div>
-  <div class="filters" id="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="nature">Nature</button><button class="filter" data-filter="travel">Travel</button><button class="filter" data-filter="moments">Moments</button><button class="filter" data-filter="details">Details</button></div>
-  <div class="gallery-grid" id="galleryGrid">
-    <button class="photo-card" data-category="nature" data-title="Bloom" data-image="https://images.unsplash.com/photo-1490750967868-88aaange?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1490750967868-88aaange?auto=format&fit=crop&w=700&q=80" alt="Flower in soft light"><span>Nature</span></button>
-    <button class="photo-card" data-category="travel" data-title="Mountain escape" data-image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80" alt="Mountain landscape"><span>Travel</span></button>
-    <button class="photo-card" data-category="nature" data-title="Autumn" data-image="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80" alt="Autumn trees"><span>Nature</span></button>
-    <button class="photo-card" data-category="details" data-title="Butterfly" data-image="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=700&q=80" alt="Butterfly close up"><span>Details</span></button>
-    <button class="photo-card" data-category="nature" data-title="Spring blossoms" data-image="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=700&q=80" alt="White blossoms"><span>Nature</span></button>
-    <button class="photo-card" data-category="travel" data-title="City lights" data-image="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=80" alt="City architecture at night"><span>Travel</span></button>
+  <nav id="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#moments">Moments</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="social-top">
+    <a href="#contact" aria-label="Instagram">◎</a>
+    <a href="#videos" aria-label="YouTube">▶</a>
+    <a href="#contact" aria-label="Telegram">➤</a>
   </div>
-</section>
-<section class="section" id="videos">
-  <div class="section-heading"><h2>Videos</h2><a class="text-link" href="#videos">Video collection ↗</a></div>
-  <div class="video-grid"><article class="video-feature"><video controls poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"><source src="assets/videos/your-video-1.mp4" type="video/mp4">Your browser does not support video playback.</video><div><h3>Video title</h3><p>Replace with your own video in the videos folder.</p></div></article>
-  <article class="video-tile"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=700&q=80" alt="Forest stream"><div><h3>Nature film</h3><p>Video placeholder</p></div></article><article class="video-tile"><img src="https://images.unsplash.com/photo-1509233725247-49e1e6e6e8a?auto=format&fit=crop&w=700&q=80" alt="Flower close-up"><div><h3>Short clip</h3><p>Video placeholder</p></div></article></div>
-</section>
-<section class="lower-grid">
-  <section class="section mini-section" id="moments"><div class="section-heading"><h2>Moments</h2><a class="text-link" href="#gallery">Browse ↗</a></div><div class="moment-strip"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=80" alt="Sunset"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=500&q=80" alt="Forest"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=500&q=80" alt="Mountain"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Leaves"></div></section>
-  <section class="section mini-section" id="about"><div class="section-heading"><h2>About</h2></div><div class="about-box"><div class="about-icon">✦</div><p>This is my personal space for photographs, films, memories, and things I love. Replace this text with your own introduction.</p><a class="gold-button small" href="#contact">Say hello →</a></div></section>
-  <section class="section mini-section" id="contact"><div class="section-heading"><h2>Contact</h2></div><p class="contact-note">Let's stay connected.</p><div class="contact-links"><a href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a><a href="https://youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a><a href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">➤</a><a href="mailto:your-email@example.com" aria-label="Email">✉</a></div><p class="placeholder-note">Edit social links and email in index.html</p></section>
-</section>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow">A PERSONAL COLLECTION</p>
+      <h1>Welcome to <span>my world.</span></h1>
+      <p class="hero-sub">A collection of photos, videos and special moments.</p>
+      <a class="gold-button" href="#gallery">Explore Gallery <span>→</span></a>
+    </div>
+    <div class="hero-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="section-heading">
+      <h2>Photo Gallery</h2>
+      <a href="#gallery" class="text-link">View all photos ↗</a>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-filter="all">All photos</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <p class="media-loading">Loading photos from GitHub…</p>
+    </div>
+  </section>
+
+  <section class="section" id="videos">
+    <div class="section-heading">
+      <h2>Videos</h2>
+      <a class="text-link" href="#videos">Video collection ↗</a>
+    </div>
+    <div class="video-grid" id="videoGrid">
+      <p class="media-loading">Loading videos from GitHub…</p>
+    </div>
+  </section>
+
+  <section class="lower-grid">
+    <section class="section mini-section" id="moments">
+      <div class="section-heading">
+        <h2>Moments</h2>
+        <a class="text-link" href="#gallery">Browse ↗</a>
+      </div>
+      <div class="moment-strip">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=80" alt="Sunset">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=500&q=80" alt="Forest">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=500&q=80" alt="Mountain">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Leaves">
+      </div>
+    </section>
+
+    <section class="section mini-section" id="about">
+      <div class="section-heading"><h2>About</h2></div>
+      <div class="about-box">
+        <div class="about-icon">✦</div>
+        <p>This is my personal space for photographs, films, memories, and things I love. Replace this text with your own introduction.</p>
+        <a class="gold-button small" href="#contact">Say hello →</a>
+      </div>
+    </section>
+
+    <section class="section mini-section" id="contact">
+      <div class="section-heading"><h2>Contact</h2></div>
+      <p class="contact-note">Let's stay connected.</p>
+      <div class="contact-links">
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+        <a href="https://youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a>
+        <a href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">➤</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">✉</a>
+      </div>
+      <p class="placeholder-note">Edit social links and email in index.html</p>
+    </section>
+  </section>
 </main>
-<footer><span>© <span id="year"></span> My Personal Archive</span><span>Made for moments worth keeping</span></footer>
-<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button><img id="lightboxImage" alt="Selected gallery photo"><p id="lightboxTitle"></p></div>
-<script src="script.js"></script>
-  <div class="video-box">
-  <video controls playsinline preload="metadata" width="100%">
-    <source src="./3a1980f7571a41b794a1abb1614f3a95.mp4" type="video/mp4">
-  </video>
+
+<footer>
+  <span>© <span id="year"></span> My Personal Archive</span>
+  <span>Made for moments worth keeping</span>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <img id="lightboxImage" alt="Selected gallery photo">
+  <p id="lightboxTitle"></p>
 </div>
-</body></html>
+
+<script src="script.js"></script>
+
+<style>
+.media-loading, .media-error { grid-column: 1 / -1; padding: 18px; color: #b9b9b9; }
+
+.auto-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: #171717;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.auto-photo img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.auto-photo span {
+  display: block;
+  padding: 10px;
+  color: #eee;
+  text-align: left;
+}
+
+.auto-video {
+  min-width: 0;
+  background: #171717;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.auto-video video {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  background: #000;
+}
+
+.auto-video div {
+  padding: 12px;
+  color: #eee;
+}
+
+.auto-video h3 { margin: 0 0 6px; }
+.auto-video p { margin: 0; color: #aaa; overflow-wrap: anywhere; }
+</style>
+
+<script>
+(() => {
+  // Public GitHub repository containing this website's uploaded media.
+  const repoContents = "https://api.github.com/repos/sherixbazel/sisubazel/contents/";
+  const gallery = document.getElementById("galleryGrid");
+  const videos = document.getElementById("videoGrid");
+  const imageExt = /\.(jpe?g|png|gif|webp|avif)$/i;
+  const videoExt = /\.(mp4|webm|ogg|mov|m4v)$/i;
+
+  function mediaUrl(name) {
+    return "./" + name.split("/").map(encodeURIComponent).join("/");
+  }
+
+  function showError(container, message) {
+    container.innerHTML = "";
+    const p = document.createElement("p");
+    p.className = "media-error";
+    p.textContent = message;
+    container.appendChild(p);
+  }
+
+  async function loadMedia() {
+    try {
+      const response = await fetch(repoContents, {
+        headers: { "Accept": "application/vnd.github+json" }
+      });
+      if (!response.ok) throw new Error("GitHub returned " + response.status);
+      const files = await response.json();
+      const images = files.filter(f => f.type === "file" && imageExt.test(f.name));
+      const movieFiles = files.filter(f => f.type === "file" && videoExt.test(f.name));
+
+      gallery.innerHTML = "";
+      if (!images.length) {
+        showError(gallery, "No photos found in the main GitHub folder yet.");
+      } else {
+        images.forEach(file => {
+          const button = document.createElement("button");
+          button.className = "photo-card auto-photo";
+          button.type = "button";
+          const img = document.createElement("img");
+          img.src = mediaUrl(file.name);
+          img.alt = file.name;
+          img.loading = "lazy";
+          const label = document.createElement("span");
+          label.textContent = file.name;
+          button.append(img, label);
+          button.addEventListener("click", () => {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightboxImage");
+            const title = document.getElementById("lightboxTitle");
+            if (lightbox && lightboxImage) {
+              lightboxImage.src = mediaUrl(file.name);
+              if (title) title.textContent = file.name;
+              lightbox.setAttribute("aria-hidden", "false");
+              lightbox.classList.add("open");
+            } else {
+              window.open(mediaUrl(file.name), "_blank", "noopener");
+            }
+          });
+          gallery.appendChild(button);
+        });
+      }
+
+      videos.innerHTML = "";
+      if (!movieFiles.length) {
+        showError(videos, "No videos found in the main GitHub folder yet.");
+      } else {
+        movieFiles.forEach(file => {
+          const article = document.createElement("article");
+          article.className = "video-feature auto-video";
+          const video = document.createElement("video");
+          video.controls = true;
+          video.playsInline = true;
+          video.preload = "metadata";
+          const source = document.createElement("source");
+          source.src = mediaUrl(file.name);
+          source.type = file.name.toLowerCase().endsWith(".webm") ? "video/webm" :
+                        file.name.toLowerCase().endsWith(".ogg") ? "video/ogg" : "video/mp4";
+          video.appendChild(source);
+          const details = document.createElement("div");
+          const heading = document.createElement("h3");
+          heading.textContent = file.name;
+          details.appendChild(heading);
+          article.append(video, details);
+          videos.appendChild(article);
+        });
+      }
+    } catch (error) {
+      showError(gallery, "Could not load GitHub photos. Check that the repository is public and the repository address is correct.");
+      showError(videos, "Could not load GitHub videos. Check that the repository is public and the repository address is correct.");
+      console.error("GitHub media loading failed:", error);
+    }
+  }
+
+  loadMedia();
+})();
+</script>
+
+</body>
+</html>
