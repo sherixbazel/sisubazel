@@ -26,11 +26,77 @@
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
-  <div class="social-top">
-    <a href="#contact" aria-label="Instagram">◎</a>
-    <a href="#videos" aria-label="YouTube">▶</a>
-    <a href="#contact" aria-label="Telegram">➤</a>
-  </div>
+
+<div class="social-top">
+  <a href="https://instagram.com/Sisu.bazel"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Instagram" title="Instagram">
+    <svg viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+  </a>
+
+  <a href="https://youtube.com/@sherixbazel"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="YouTube" title="YouTube">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 12s0-4-1-5-4-1-9-1-8 0-9 1-1 5-1 5 0 4 1 5 4 1 9 1 8 0 9-1 1-5 1-5z"/>
+      <path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/>
+    </svg>
+  </a>
+
+  <a href="https://giphy.com/sisubazel"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="GIPHY" title="GIPHY">
+    <span class="giphy-icon">G</span>
+  </a>
+</div>
+
+<style>
+.social-top {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+}
+
+.social-top a {
+  width:48px;
+  height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #555;
+  border-radius:15px;
+  color:#eee;
+  background:linear-gradient(145deg,#242424,#101010);
+  transition:all .3s ease;
+  text-decoration:none;
+}
+
+.social-top svg {
+  width:23px;
+  height:23px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+}
+
+.giphy-icon {
+  font-size:25px;
+  font-weight:900;
+}
+
+.social-top a:hover {
+  color:#fff;
+  border-color:#c9a96e;
+  transform:translateY(-5px);
+  box-shadow:0 6px 20px #c9a96e40;
+}
+</style>
+
 </header>
 
 <main>
